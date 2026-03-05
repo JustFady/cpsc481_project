@@ -1,14 +1,14 @@
 # Next-Generation Market Visualizations: Biomimetic & Counterfactual Systems
 
 ## Project Overview
-This project represents a shift from traditional quantitative visualization toward biomimetic systems and causal inference. We are moving from descriptive analytics ("what is") into simulations of "what could be." By transforming market microstructure data into a 3D biological entity and parallel "counterfactual" realities, we shift the paradigm from "What happened?" to "Why did it happen?"
+This project represents a sophisticated shift from traditional quantitative visualization toward biomimetic systems and causal inference. We are moving from descriptive analytics ("what is") into the realm of simulations and causal analysis ("what could be"). By transforming market microstructure data into intuitive 3D biological entities and parallel "counterfactual" realities, we shift the paradigm of financial monitoring toward immediate sensory perception and explainable modeling.
 
 ---
 
-## Core Concepts
+## The Core Ideas
 
-### 1. The Market as a Living Organism
-A biomimetic transformation of market microstructure data into a 3D biological entity, allowing for intuitive "health" monitoring of systemic risk.
+### 1. The Market as a Living Organism (Biomimetic Monitoring)
+This concept involves a biomimetic transformation of market microstructure data into a 3D biological entity to allow for intuitive "health" monitoring of systemic risk.
 
 * **3D Evolution**: The organism pulses with order imbalances and deforms under structural market stress.
 * **Intuitive Diagnostics**: Before a crash or "flush," the organism appears visually "sick" or unstable, bypassing abstract cognition for immediate sensory perception.
@@ -29,30 +29,31 @@ A visualization framework that utilizes causal inference to display parallel mar
     1. **Observed Market**: The "ground truth" real-time data.
     2. **No-Gamma Reality**: A simulation removing the effects of delta-hedging pressure.
     3. **No-Manipulation Reality**: A simulation filtering out pulling, stacking, and spoofing signals.
-
----
-
-## Interaction & User Agency
-* **3D Navigation**: Users can rotate the 3D entity and isolate specific strike regions to observe localized activity.
-* **Historical Scrubbing**: A timeline allows users to scrub through "health" cycles to identify lead-up patterns to market stress.
-* **Force Toggling**: Users can "switch off" specific market forces in real-time to observe how price trajectories diverge in a vacuum.
 * **Divergence Measurement**: Quantitative tools to measure the structural delta between reality and the counterfactual simulations.
 
 ---
 
-## Technical Stack & Architecture
-To support a hosted, interactive environment, the project is built on a modern full-stack architecture:
+## Interaction & User Agency
+* **3D Navigation**: Users can rotate the 3D entity and isolate specific strike regions to observe localized cellular activity.
+* **Historical Scrubbing**: Ability to scrub through historical "health" cycles to identify lead-up patterns to market stress.
+* **Force Toggling**: Users can "switch off" specific market forces (like liquidity imbalance) to see how the price would have moved in a vacuum.
+* **Synchronized Realities**: Three identical coordinate systems displayed side-by-side or overlaid, showing diverging price trajectories and structural dynamics.
 
-* **Frontend**: **React** with **Three.js (React Three Fiber)** for high-performance 3D rendering.
-* **Backend**: **FastAPI (Python)** for processing microstructure data and running causal inference models.
-* **Real-time Engine**: **WebSockets** to stream live market data (ground truth) directly to the client.
-* **Causal Engine**: Implementation of stochastic modeling and causal counterfactuals to isolate market variables.
-* **Hosting**: Designed for deployment on **Vercel** (Frontend) and **AWS/Heroku** (Backend) for low-latency interaction.
+---
+
+## Implementation & System Architecture
+To support a hosted, interactive environment, the project is built on a modern full-stack architecture designed for real-time performance.
+
+* **Frontend**: **React** with **Three.js (React Three Fiber)** to manage the 3D rendering and synchronized coordinate systems.
+* **Backend**: **FastAPI (Python)** to compute causal deltas and run the "No-Gamma" and "No-Manipulation" simulation layers.
+* **Hosting**: The frontend and interactive UI are hosted on **Netlify**, utilizing continuous integration and serverless functions where necessary.
+* **Causal Engine**: Bridging the gap between visualization and causal analysis to isolate variables in complex adaptive systems.
+* **Data Pipeline**: A dedicated system to ingest and visualize market microstructure data (liquidity, volume, and price movement).
 
 ---
 
 ## Academic & Research Value
-This project bridges the gap between data visualization and:
+This project shifts the focus from "What happened?" to "Why did it happen?". It serves as a research tool for:
 * **Causal Analysis**: Isolating variables in complex adaptive systems.
 * **Explainable Modeling**: Making "Black Box" market forces transparent.
 * **Decision Support**: Enhancing risk assessment through counterfactual reasoning.
@@ -61,6 +62,6 @@ This project bridges the gap between data visualization and:
 
 ## Getting Started
 1. **Clone the Repo**: `git clone [repository-url]`
-2. **Install Dependencies**: `npm install` and `pip install -r requirements.txt`
-3. **Run Development Server**: `npm run dev`
-4. **Initialize Data Stream**: Connect via the provided WebSocket endpoint to visualize live or historical data.
+2. **Install Frontend Dependencies**: `npm install`
+3. **Install Backend Dependencies**: `pip install -r requirements.txt`
+4. **Deploy**: Push to the main branch for automatic deployment via **Netlify**.
