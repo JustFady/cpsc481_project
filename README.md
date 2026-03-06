@@ -63,3 +63,23 @@ Schema details for these outputs are defined in `docs/schema_contract.md`.
 ## Notes
 - Source header typo must be handled in preprocessing: `cans ll_delta` -> `call_delta`.
 - For prototype speed, prioritize deterministic transforms and simple interpretable formulas.
+
+## Interactive Dashboard
+Run a local interactive dashboard to explore market state quickly.
+
+Install dependencies:
+```bash
+pip install streamlit plotly pandas numpy
+```
+
+Start dashboard:
+```bash
+streamlit run app/dashboard.py
+```
+
+Dashboard features:
+- Side, time-window, and strike-range filters
+- ES vs SPX timeline
+- Health/Stress timeline
+- Liquidity heatmap by time and strike
+- Manipulation vs gamma scatter with liquidity sizing
